@@ -1,1 +1,63 @@
+/* Removes default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Styles the top header */
+header {
+    padding: 20px;
+    background-color: pink;
+    color: blue;
+    text-align: center;
+}
+
+/* Adds spacing around the main content */
+main {
+    padding: 20px;
+}
+
+/* Adds space below the introduction section */
+.intro {
+    margin-bottom: 24px;
+}
+
+/* Mobile-first styling for the project cards */
+article {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 20px;
+    background-color: lightgray;
+    border: 2px solid black;
+}
+
+/* Styles the footer */
+footer {
+    margin-top: 24px;
+    padding: 20px;
+    background-color: pink;
+    color: blue;
+    text-align: center;
+}
+
+/* Keeps all project images the same size */
+article img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+/* Desktop layout for screens 768px and larger */
+@media (min-width: 768px) {
+
+    article {
+        display: inline-block;
+        width: 30%;
+        margin-right: 3%;
+        vertical-align: top;
+        height: 430px;
+    }
+
+}
